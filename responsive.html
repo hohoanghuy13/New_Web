@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        #container{
+            border: 5px solid pink;
+            width: 80%;
+            padding: 1rem;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* gap: row-gap column-gap */
+        }
+        .list{
+            border: 3px solid violet;
+            margin: 5px;
+            padding: .5rem;
+            flex-grow: 1;
+        }
+        .flex{
+            flex-grow: 2;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="list">Home</div>
+        <div class="list">Contact</div>
+        <div class="list">Inform</div>
+        <div class="list">Food</div>
+        <div class="list flex">Drink</div>
+        <div class="list">Reference</div>
+        <div class="list flex">Home2</div>
+        <div class="list">Contact</div>
+        <div class="list">Inform</div>
+        <div class="list">Food</div>
+        <div class="list">Drink2</div>
+        <div class="list">Reference</div>
+    </div>
+</body>
+</html>
